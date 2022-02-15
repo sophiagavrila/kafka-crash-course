@@ -1,9 +1,15 @@
 # Intro to Kafka
 
 ## What's Covered?
-- Intro to Kafka
-  - [What is Kafka?](#what-is-apache-kafka)
+
+- [Intro to Kafka](#intro-to-kafka)
+  - [What's Covered?](#whats-covered)
+  - [What is Apache Kafka?](#what-is-apache-kafka)
   - [What is an Event Streaming Platform?](#what-is-an-event-streaming-platform)
+  - [Kafka Terminology & Client API's](#kafka-terminology--client-apis)
+  - [Installation](#installation)
+      - [Install 7-Zip](#install-7-zip)
+      - [Install Kafka](#install-kafka)
 
 - Building Enterprise Standard Kafka Clients using Spring Boot
   - Build Kafka Clients using Producer and Consumer API
@@ -45,16 +51,13 @@ And event streaming platform allows the application to produce and consume a str
 
 <br>
 
-## Traditional Messaging System vs Kafka Streaming Platform
-
-
 ## Kafka Terminology & Client API's
 
 | Term      | Description |
 | ----------- | ----------- |
 | Kafka Cluster   | Consists of multiple brokers at the heart of Kafka  |
 | Kafka Broker   | What all the Kafka clients interact with        |
-| Apache ZooKeeper   | Manages Brokers by keeping track of their health and managing  the cluster       |
+| Apache ZooKeeper   | Manages Brokers by keeping track of their health       |
 | Kafka Producers   |  Writes data to the cluster       |
 | **Producer API**      | The client uses this API to write data to the cluster      |
 | Kafka Consumers   | Entities that read data from the cluster        |
@@ -63,3 +66,28 @@ And event streaming platform allows the application to produce and consume a str
 | Source Connector   | Pulls data from an external data source like, DB file system or elastisearch        |
 | Sink Connector   | Does the opposite of Source Connector        |
 | **Streams API**   | Can take data from Kafka and perform transformations on it and send it back to the cluster        |
+
+<br>
+
+## Installation
+
+#### Install 7-Zip
+In order to download Kafka on Windows you will need to download 7-Zip first.  If you're on Mac or Linux, skip to **Install Kafka**.
+
+1. Go to [https://www.7-zip.org/](https://www.7-zip.org/) and click "Download" for "Widnows 64-bit x64"
+
+2. Once the `.exe` has donwloaded, click on it, and allow it to install in the default location which is `C:\Program Files\7-Zip\`. After it installs, close the installer.
+
+
+#### Install Kafka
+1. Google "download apache kafka" and it will take you [here](https://kafka.apache.org/downloads)
+> In this demo I've used version **3.1.0**
+
+2. Under **Binary Downloads**, next to Scala 2.13 click `kafka_2.13-3.1.0.tgz`.  This will take you to a new page.
+
+3. Click the link at the top of the page to download under "We suggest the following site for your download:" `https://dlcdn.apache.org/kafka/3.1.0/kafka_2.13-3.1.0.tgz`
+
+4. Open the folder that it downloaded to (most likely "Downloads")
+
+
+
