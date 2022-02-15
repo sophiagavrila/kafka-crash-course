@@ -2,8 +2,8 @@
 
 ## What's Covered?
 - Intro to Kafka
-  - [What is Kafka?](#what-is-kafka)
-  - [What is an Event Streaming Platform?](#event-streaming)
+  - [What is Kafka?](#what-is-apache-kafka)
+  - [What is an Event Streaming Platform?](#what-is-an-event-streaming-platform)
 
 - Building Enterprise Standard Kafka Clients using Spring Boot
   - Build Kafka Clients using Producer and Consumer API
@@ -14,7 +14,7 @@
 
 <>
 
-## What is Apache Kafka? {#what-is-kafka}
+## What is Apache Kafka?
 Apache Kafka is used as a Streaming Platform.  In the past, all the applications were built using monolithic architecture.  That means all the functionalities will reside in one single application.
 The example here is a retail application and some of the related services are orders, service, payment, service, inventory service and notification service. All those services will reside in one single application and share the same database.
 
@@ -36,7 +36,7 @@ In a nutshell, each micro servers will have an API and it will have an event pro
 
 <br>
 
-## What is an Event Streaming Platform? {#event-streaming}
+## What is an Event Streaming Platform?
 And event streaming platform allows the application to produce and consume a stream of records, like a messaging system. The three Principles of an Event Streaming Platform are:
 
 1. Producers and Consumers subscribe to a stream of records
