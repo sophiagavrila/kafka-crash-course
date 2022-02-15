@@ -52,15 +52,14 @@ And event streaming platform allows the application to produce and consume a str
 
 | Term      | Description |
 | ----------- | ----------- |
-| Producer API      | Title       |
-| Kafka Producers   | Text        |
-| Consumer API   | Text        |
-| Kafka Consumers   | Text        |
-| Streams API   | Text        |
-| Kafka Streams   | Text        |
-| Connect API   | Text        |
-| Source Connector   | Text        |
-| Sink Connector   | Text        |
-| Kafka Broker   | Text        |
-| Kafka Cluster   | Text        |
-| Apache ZooKeeper   | Text        |
+| Kafka Cluster   | Consists of multiple brokers at the heart of Kafka  |
+| Kafka Broker   | What all the Kafka clients interact with        |
+| Apache ZooKeeper   | Manages Brokers by keeping track of their health and managing  the cluster       |
+| Kafka Producers   |  Writes data to the cluster       |
+| **Producer API**      | The client uses this API to write data to the cluster      |
+| Kafka Consumers   | Entities that read data from the cluster        |
+| **Consumer API**   | API used by entities to read data from the cluster       |
+| **Connect API**   | Advanced API that Contains Source & Sink Connectors        |
+| Source Connector   | Pulls data from an external data source like, DB file system or elastisearch        |
+| Sink Connector   | Does the opposite of Source Connector        |
+| **Streams API**   | Can take data from Kafka and perform transformations on it and send it back to the cluster        |
